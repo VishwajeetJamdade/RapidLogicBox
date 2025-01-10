@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Bootstrap's z-index for fixed elements */
+    background-color: #111; /* Adjust based on your design */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px; /* Optional padding for the main content */
+    background-color: #f8f9fa; /* Light gray for content area */
+  }
+  
+  .footer {
+    background-color: #111; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1020; /* Keep footer above other content */
+  }
+  
+  .footer a {
+    color: #ddd;
+    text-decoration: none;
+  
+    &:hover {
+      color: #00cc00;
+    }
+  }
+  
